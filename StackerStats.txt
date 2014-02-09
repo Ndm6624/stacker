@@ -1,0 +1,2 @@
+wins:1
+loses:37
