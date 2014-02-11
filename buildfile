@@ -17,15 +17,11 @@ define "stacker" do
   project.group = GROUP
   manifest["Implementation-Vendor"] = COPYRIGHT
   manifest["Main-Class"] = "Stacker"
-  # you may see hints about which jars are missing and should resolve them correctly
-  # dependencies  << 'junit should be commented out and replace by correct ARTIFACT definition. Eg
-  # dependencies  << 'junit:junit:jar:3.8.2'
   layout[:source, :main, :java] = "src"
   layout[:source, :main, :scala] = "src"
   layout[:target, :main] = "bin"
   layout[:target, :main, :java] = "bin"
   layout[:target, :main, :scala] = "bin"
-  #compile.with dependencies # Add more classpath dependencies
   package :jar
   run.using :main => "Stacker"
 end
