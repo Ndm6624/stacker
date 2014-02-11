@@ -27,5 +27,6 @@ define "stacker" do
   layout[:target, :main, :scala] = "bin"
   #compile.with dependencies # Add more classpath dependencies
   package :jar
+  run.using :main => "Stacker"
 end
 
